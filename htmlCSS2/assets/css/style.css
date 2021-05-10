@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30px;
+}
+/* solid | double | dashed */
+/*  çizgi kalınlığı, çizgi türü, renk*/
+.tablo {
+  border: 4px solid grey;
+  border-collapse: collapse;
+  width: 50%; /* Yüzdelik dilim sayfaya göre hesaplanır. */
+  margin-left: auto; /* Sol ve Sağdan otomatik boşluk koyarak nesneler ortaya
+                       hizalanabilir. */
+  margin-right: auto;
+}
+/* Birden fazla atribute'e aynı stillendirme yapılacaksa virgül ile ayrılarak yazılabilir.
+*/
+th,
+td {
+  border: 4px solid grey;
+}
