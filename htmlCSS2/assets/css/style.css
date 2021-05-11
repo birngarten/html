@@ -5,8 +5,9 @@ h1 {
   color: red;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 30px;
+  /* margin-top ==> bir ust elemanla arasindaki mesafeyi ayarlamamizi saglar/ aralik verir */
 }
-/* solid | double | dashed */
+/*border ==> solid | double | dashed  olabilir*/
 /*  çizgi kalınlığı, çizgi türü, renk*/
 .tablo {
   border: 4px solid grey;
@@ -21,4 +22,13 @@ h1 {
 th,
 td {
   border: 4px solid grey;
+}
+th {
+  background-color: cornflowerblue;
+}
+tr:hover {
+  background-color: coral;
+}
+tr:nth-child(even) {
+  background-color: rgb(204, 193, 193);
 }

@@ -3,47 +3,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets\css\style.css" />
     <title>Formlar</title>
   </head>
   <body>
     <h1>FORMLAR</h1>
     <form action="kaydet.php">
-      <label for="ad">Adiniz: </label>
-      <input class="input" id="ad" type="text" placeholder="isim giriniz" />
+      <label class="label" for="ad">Adiniz: </label>
+      <input
+        class="giris"
+        id="ad"
+        type="text"
+        maxlength="20"
+        name="adi"
+        placeholder="isim giriniz"
+      />
       <br />
 
-      <label for="password">Sifreniz:</label>
+      <label class="label" for="password">Sifreniz:</label>
       <input
-        class="input"
+        class="giris"
         id="password"
         type="password"
         placeholder="sifrenizi giriniz"
         name="ad"
         value=""
         required=""
-        <!--
-        Ilgili
-        alanin
-        bos
-        gecilmesine
-        izin
-        verimemesi
-        icin
-        yazilir
-        --
       />
-      />
-
+      <!-- required="" ==> Ilgili alanin bos gecilmesine izin vermemesi icin yazilir   -->
       <br />
 
-      <label for="email">Email: </label>
-      <input class="input" id="email" type="email" value="" />
+      <label class="label" for="email">Email: </label>
+      <input class="giris" id="email" type="email" value="" />
       <br />
 
-      <label for="sayi">Yasiniz:</label>
+      <label class="label" for="sayi">Yasiniz:</label>
       <input
-        class="input"
+        class="giris"
         id="sayi"
         type="number"
         name="yas"
@@ -51,10 +51,16 @@
         max="100"
         min="0"
       />
-
       <br />
-      <input type="submit" value="Gonder" />
-      <input type="button" value="Temizle" />
+
+      <label class="label" for="adres">Adres</label>
+      <textarea name="text-alani" id="adres" rows="10"></textarea><br />
+      <button class="btn" type="submit">
+        <i class="far fa-save"></i>Gonder
+      </button>
+      <button class="btn" type="reset">
+        <i class="fas fa-trash-alt"></i>Temizle
+      </button>
     </form>
   </body>
 </html>

@@ -1,8 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 * {
   text-align: center;
+  margin: 0; /*Baştan Tüm Boşluklaı sıfırla*/
+  box-sizing: border-box;
+  /* box-sizing CSS'de kullanilan kutu modelini secmek icin kullanilir. Genelde border-box modeli tercih edilir */
 }
-.input {
+h1 {
+  margin-top: 50px;
+}
+body {
+  background-image: linear-gradient(rgb(170, 235, 154), rgb(111, 128, 155));
+  font-family: "Roboto Mono", monospace;
+}
+.giris {
   margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 200px;
   height: 33px;
+  border-radius: 5px;
+  border: rgb(212, 114, 75);
+}
+
+.label {
+  display: block; /*inline olan bir eleman blok hale getirilebilir */
+  margin-right: 10px;
+}
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20;
+  background-color: rgb(235, 236, 177);
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border: 3px solid rgb(153, 51, 11);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(248, 252, 11);
+}
+
+.far, /*Bununla Gonder ve Temizle butonlardaki ikonlarin rengini degistirdik */
+.fas {
+  color: darkred;
+  font-size: 17px;
+}
+
+textarea {
+  width: 200px;
+  font-size: 14px;
+  border-radius: 1ch;
 }
