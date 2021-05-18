@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Resim | Buton</title>
+  </head>
+  <body>
+    <!-- ** border’lar hakkında ayrıntılı bilgi için
+    ! https://getbootstrap.com/docs/5.0/utilities/borders/ -->
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <!-- ? img-fluid : responsive ozelligi kazandirir. Ekrana gore orantisal buyur, kuculur. -->
+          <img
+            id="resim-1"
+            class="img-thumbnail img-fluid"
+            src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-1"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="img-fluid border border-warning border-4 rounded-circle"
+            src="https://images.pexels.com/photos/1374295/pexels-photo-1374295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-2"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="border border-danger border-4 rounded-3 img-fluid"
+            src="https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ? *** BUTON ** -->
+    <div class="container mt-4">
+      <button class="btn btn-outline-warning">TIKLA</button>
+      <button class="btn btn-danger">GONDER</button>
+      <button class="btn btn-dark">SIL</button>
+      <button class="btn btn-outline-primary btn-lg d-block m-3 w-100">
+        <a href="index.html#resim-1 " class="text-decoration-none">KAYDET</a>
+        <!-- * Dahili sayfada link verme / linke gitme -->
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="btn-group">
+        <a href="#" class="btn btn-warning">1</a>
+        <a href="#" class="btn btn-success">2</a>
+        <a href="#" class="btn btn-info">3</a>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
